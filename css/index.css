@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya'); body {
+    padding-top: 54px;
+    background: #F7DEDEFF;
+    font-family: 'Alegreya', serif;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+h1 {
+    text-shadow: 3px 1px 4px black;
+}
+
+h2 {
+    color: #7C1B15FF;
+}
+
+.header {
+    height: 50vh;
+    min-height: 300px;
+    background: url('../img/header.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.card {
+    height: 100%;
+    background: #7C1B15AA;
+    color: #fff;
+}
+
+#about {
+    padding-top: 24px;
+    text-align: justify;
+}
+
+#address {
+    padding-top: 24px;
+}
+
+#portfolio {
+    padding-top: 54px;
+}
+
+#popupToggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+    #popupToggle {
+      display: block;    
+    }
+}
+
+.loaderArea {
+    background: #fff;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+}
+
+.loader {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
+.loader:before, .loader:after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+}
